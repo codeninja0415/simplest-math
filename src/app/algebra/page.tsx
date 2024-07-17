@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const AlgebraPage = () => {
   return (
-    <div className="flex items-center justify-center grow w-full">
+    <div className="flex items-center justify-center grow w-full text-black dark:text-white">
       We are comming soon... ✌
     </div>
   );

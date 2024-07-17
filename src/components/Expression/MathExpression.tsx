@@ -31,7 +31,6 @@ const MathExpression = ({numerator1, denominator1, numerator2, denominator2, set
     } else {
       const calcResult = Number(resultNumerator) / Number(resultDenominator);
       setResult(calcResult);
-      console.log('caclResult', calcResult)
     }
   }, [resultDenominator, resultNumerator]);
 

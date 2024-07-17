@@ -16,12 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://fred-wang.github.io/MathFonts/LatinModern/mathfonts.css"
-        />
-      </head>
+      <head />
       <body className={`bg-[#FCFCFC] dark:bg-black min-h-[100vh] flex flex-col ${inter.className}`}>
         <Providers>
           <Header />

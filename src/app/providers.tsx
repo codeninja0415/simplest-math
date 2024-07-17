@@ -15,9 +15,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <AppRouterCacheProvider>
       <CssBaseline />
       <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
-        <MathJaxContext>
-          {children}
-        </MathJaxContext>
+        {!isSSR && (
+          <MathJaxContext>
+            {children}
+          </MathJaxContext>
+        )}
       </ThemeProvider>
     </AppRouterCacheProvider>
   );
