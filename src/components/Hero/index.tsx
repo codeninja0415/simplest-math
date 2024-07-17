@@ -20,7 +20,7 @@ const Hero = () => {
               </div>
               <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                 <div
-                  className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  className="cursor-pointer rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   🔥 <span className="text-pink-800 mr-2">Welcome</span> <span className="font-bold">Vasily Naumenko </span> 😉
                 </div>

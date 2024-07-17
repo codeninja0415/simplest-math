@@ -1,0 +1,26 @@
+.expression {
+  math,
+  mrow,
+  mo,
+  mi,
+  mn,
+  mfrac {
+    @apply text-black text-[30px];
+  }
+
+  .math-input {
+    min-height: 40px;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    border: 1px solid #000; /* Always show a black border */
+    padding: 2px;           /* Add some padding for better look */
+    outline: none;
+    background-color: white;
+    font-size: 21px;
+    color: black;
+  }
+
+  .math-input:focus{
+    border-color: #007bff;
+  } 
+}

@@ -52,7 +52,7 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo w-full flex ${
+                className={`header-logo w-full flex text-black dark:text-white ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
@@ -61,7 +61,7 @@ const Header = () => {
                   alt="logo"
                   width={24}
                   height={24}
-                  className="w-[24px] h-[24px] dark:hidden"
+                  className="w-[24px] h-[24px]"
                 />
                 <span className="ml-2 font-bold">Simplest</span>Math
               </Link>
