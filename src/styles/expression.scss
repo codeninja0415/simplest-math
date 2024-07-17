@@ -1,13 +1,4 @@
 .expression {
-  math,
-  mrow,
-  mo,
-  mi,
-  mn,
-  mfrac {
-    @apply text-black text-[30px];
-  }
-
   .math-input {
     min-height: 40px;
     width: 200px; /* Adjust width as needed */
@@ -16,7 +7,7 @@
     padding: 2px;           /* Add some padding for better look */
     outline: none;
     background-color: white;
-    font-size: 21px;
+    font-size: 24px;
     color: black;
   }
 

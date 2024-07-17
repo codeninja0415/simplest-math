@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import { MathJax } from 'better-react-mathjax';
 
 type MathExpressionProps = {
   numerator1: number;
@@ -20,7 +21,10 @@ const MathExpression = ({numerator1, denominator1, numerator2, denominator2, set
       setter(value);
     }
   };
-
+  useEffect(()=>{
+    setResultNumerator('');
+    setResultDenominator('');
+  }, [numerator1, denominator1, numerator2, denominator2])
   useEffect(() => {
     if (resultNumerator === '' || resultDenominator === '') {
       setResult(null);
@@ -33,21 +37,8 @@ const MathExpression = ({numerator1, denominator1, numerator2, denominator2, set
 
   return (
       <div className='expression flex items-center justify-start'>
-        <math display="block">
-          <mrow>
-            <mfrac>
-              <mn>{numerator1}</mn>
-              <mn>{denominator1}</mn>
-            </mfrac>
-            <mo>×</mo>
-            <mfrac>
-              <mn>{numerator2}</mn>
-              <mn>{denominator2}</mn>
-            </mfrac>
-            <mo>=</mo>
-          </mrow>
-        </math>
-        <div className='flex flex-col gap-1'>
+        <MathJax style={{fontSize:'50px', color:'#000'}}>{`\\(\\frac{${numerator1}}{${denominator1}} × \\frac{${numerator2}}{${denominator2}} = \\)`}</MathJax>
+        <div className='flex flex-col gap-1 ml-5'>
           <input
             type="text"
             id="result-numerator"
